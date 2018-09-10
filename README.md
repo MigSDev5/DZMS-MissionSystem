@@ -20,3 +20,6 @@ And insert this line directly above it.
 [] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
 
 Now just rePack your PBO and enjoy!
+
+Credits: 
+https://github.com/SMVampire
