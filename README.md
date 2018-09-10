@@ -1,9 +1,10 @@
-Installation
+Installation: 
+
 Download the Github Zip folder and open it with your unPacker of choice.
 
 https://github.com/MigSDev5/DZMS-MissionSystem/archive/master.zip
 
-Extract it to your Desktop or somewhere where you won't lose it. Inside the Zip is this Readme.MD, a folder called Documentation, and one called DZMS.
+Extract it to your Desktop or somewhere where you won't lose it. Inside the Zip is this Readme.MD, a folder called DZMS.
 
 Open your Server.PBO with the PBO unPacker of your choice.
 
