@@ -5,9 +5,9 @@
 - Marker color.
 - 2 new missions major and 1 new misison minor.
 - Mission is locked if the player is within 600 meters.
-- it takes at least 1 player on the server for misisons to begin appearing.b</b>
+- it takes at least 1 player on the server for misisons to begin appearing.</b>
 
-Everything is configurable in the file DZMSConfig.sqf.
+ <i>Everything is configurable in the file DZMSConfig.sqf.</i>
 
 Installation: 
 Download the Github Zip folder and open it with your unPacker of choice.
