@@ -41,5 +41,5 @@ while {true} do {
 		_markerB setMarkerText _DZMSMajName;
 		
 	};
-	sleep 30;
+	uiSleep 2;
 };
