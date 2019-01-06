@@ -114,10 +114,10 @@ DZMSMajorArray = ["EM1","EM2","EM3","EM4","EM5","EM6","EM7","EM8","EM9"];
 DZMSMinorArray = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7"];
 
 // maximum of major missions that spawn at the same time
-DZMSMaxMissionsMaj = 4;
+DZMSMaxMissionsMaj = 2;
 
 // maximum of minor missions that spawn at the same time
-DZMSMaxMissionsMin = 4;
+DZMSMaxMissionsMin = 2;
 
 // distance between missions
 DZMSMissionsDistance = 700;
