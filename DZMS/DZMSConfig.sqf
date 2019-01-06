@@ -8,7 +8,7 @@
 DZMSMissHumanity = true;
 
 // How Much Humanity?
-DZMSCntHumanity = 35;
+DZMSCntHumanity = 25;
 
 // put coin on units
 DZMSUseCoins = true;
