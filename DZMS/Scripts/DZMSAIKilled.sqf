@@ -2,9 +2,10 @@
 	DZMSAIKilled.sqf by Vampire
 	This function is called when an AI Unit is killed.
 	It handles the humanity allocation and body cleanup.
+	edited by Mig
 */
 
-private ["_unit","_player","_humanity","_banditkills"];
+private ["_unit","_player","_humanity","_banditkills","_playerCoins"];
 _unit = _this select 0;
 _player = _this select 1;
 
@@ -19,9 +20,16 @@ if (isPlayer _player) then {
 	_humanity = _player getVariable ["humanity",0];
 	_banditkills = _player getVariable ["banditKills",0];
 	
+	_playerCoins = _player getVariable [Z_MoneyVariable,0];
+	
 	//If the player gets humanity per config, lets give it
 	if (DZMSMissHumanity) then {
 		_player setVariable ["humanity",(_humanity + DZMSCntHumanity),true];
+	};
+	
+	// give coins to player after kill ai
+	if (DZMSKillCoins) then {
+	    _player setVariable[Z_MoneyVariable,(_playerCoins + DZMSKillCoinAmount),true];
 	};
 	
 	//If this counts as a bandit kill, lets give it
