@@ -13,6 +13,12 @@ DZMSCntHumanity = 25;
 // put coin on units
 DZMSUseCoins = true;
 
+// give coint to player after kill ai
+DZMSKillCoins = true;
+
+// kill coins amount 
+DZMSKillCoinAmount = (floor random 50);
+
 // Coins Amount
 DZMSCoinsAmount = 100; // if you want a random amount, use this: DZMSCoinsAmount = round random 100;
 
