@@ -1,4 +1,5 @@
 <b>Features:
+- Automatic ai kill coins.
 - Coins on AI.
 - Multiples missions major and minor.
 - New static AI system.
