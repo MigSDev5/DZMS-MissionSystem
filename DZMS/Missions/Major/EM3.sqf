@@ -3,10 +3,16 @@
 	Example Code by Halv
 */
 
-private ["_missName","_coords","_plane","_aiGrp","_pilot","_wp","_wp_pos","_loop","_half","_newPos","_plane2","_chute","_box","_dropDir","_wp2","_fallCount","_boxFin","_marker","_markerA","_markerB","_group1","_group2","_group3","_endMission","_DZMSUnitsMajor","_status"];
+private ["_missName","_coords","_plane","_aiGrp","_pilot","_wp","_wp_pos","_loop","_half","_newPos","_plane2","_chute","_box","_dropDir","_wp2","_fallCount","_boxFin","_marker","_markerA","_markerB","_group1","_group2","_group3","_endMission","_DZMSUnitsMajor","_status","_planePos"];
 
 //Name of the Mission
 _missName = "Supply Drop";
+
+if (DZMSWorldName == "napf") then {
+    _planePos = [9244.6875, 19838.98,500];
+}else{
+    _planePos = [0,0,500];
+};
 
 DZMSMajRunning = DZMSMajRunning + 1;
 DZMSMajCount = DZMSMajCount + 1;
@@ -23,7 +29,8 @@ DZMSMissionCoord set [count DZMSMissionCoord,_marker select 1];
 DZMSInProgress set [count DZMSInProgress,"EM3"];
 
 //Lets get the AN2 Flying
-_plane = createVehicle ["AN2_DZ", [0,0,500], [], 0, "FLY"];
+//_plane = createVehicle ["AN2_DZ", [0,0,500], [], 0, "FLY"];
+_plane = createVehicle ["AN2_DZ",_planePos, [], 0, "FLY"];
 [_plane] call DZMSProtectObj;
 _plane engineOn true;
 _plane flyInHeight 150;
